@@ -1,0 +1,16 @@
+@import '../../../styles/main.scss';
+
+.button {
+  padding: 18px 34px;
+  @include text(rem(16px), 700, $WHITE);
+  line-height: 125%;
+  background-color: $BLUE;
+  border: 1px solid $BLUE;
+  border-radius: 8px;
+  cursor: pointer;
+  @include transition(background-color, color);
+  &:hover {
+    background-color: transparent;
+    color: $BLUE;
+  }
+}
